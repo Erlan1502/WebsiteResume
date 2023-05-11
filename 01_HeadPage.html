@@ -6,63 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keyword" content="Kubesov,Erlan,resume">
     <meta name="description" content="This site is resume">
+    <link rel="stylesheet" href="styles.css"> 
     <title>Kubesov Erlan</title>
 </head>
 <body>
-    <img src="picture.jpg" width="150">
-    <h1>Welcome to my website-resume!</h1>
-    <p>My name is <strong>Erlan Kubesov</strong>. I`m java developer, i have experience in frameworks like:
-        <em>Spring boot, Hibernate</em> 
-    </p>
-    <p>Also i using technologies like: <em>Docker, MySQL, Git</em> </p>
-    <p><em>Social media:</em> 
-    <a href="https://vk.com/erlan_kubesov" target="_blank">VK</a> |
-    <a href="https://www.instagram.com/erlasha99/" target="_blank">Instagram</a> | 
-    <a href="https://www.linkedin.com/in/%D0%B5%D1%80%D0%BB%D0%B0%D0%BD-%D0%BA%D1%83%D0%B1%D0%B5%D1%81%D0%BE%D0%B2-523b96274/" target="_blank">LinkedIn</a></p>
-    <p>My hobbies:</p>
-    <ul>
-        <li>Football</li>
-        <li>Coding</li>
-        <li>Investment</li>
-    </ul>
-    <h1>My work experience</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Years of work</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    Mostostroi-11
-                </td>
-                <td>
-                    Engineer
-                </td>
-                <td>
-                    2021-2022
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <h1>How to connect?</h1>
-    <form>
-        <div>
-            <label for="name">Your name:</label>
-            <input type="text" id="name">
+    <div class="container">
+        <div class="info">
+            <img src="picture.jpg" width="150" class="headPicture">
+            <div class="info-text">
+                <h1>Welcome to my website-resume!</h1>
+                <p>
+                    My name is Erlan Kubesov. I`m java developer, i have experience in frameworks like: Spring boot, Hibernate.
+                </p>
+                <p>
+                    Also i using technologies like: <em>Docker, MySQL, Git</em> 
+                </p>
+                <h4>Social media:</h4>
+                <p>
+                    <a href="https://vk.com/erlan_kubesov" target="_blank">VK</a> |
+                    <a href="https://www.instagram.com/erlasha99/" target="_blank">Instagram</a> | 
+                    <a href="https://www.linkedin.com/in/%D0%B5%D1%80%D0%BB%D0%B0%D0%BD-%D0%BA%D1%83%D0%B1%D0%B5%D1%81%D0%BE%D0%B2-523b96274/" target="_blank">LinkedIn</a>
+                </p>
+            </div>
         </div>
-        <div>
-            <label for="email">Your email:</label>
-            <input type="email" id="email">
+        <div class="card bg-rosybrown">
+            <h4>My hobbies:</h4>
+            <ul class="list">
+                <li>Football</li>
+                <li>Coding</li>
+                <li>Investment</li>
+            </ul>
         </div>
-        <div>
-            <label for="text">Your message:</label>
-            <input type="textarea" id="text">
+        <div class="card bg-blueviolet">
+            <h4>My work experience</h4>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            Mostostroi-11
+                        </td>
+                        <td>
+                            Engineer
+                        </td>
+                        <td>
+                            2021-2022
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </form>
-
+        <div class="card bg-brown">
+            <h4>The courses I have taken</h4>
+                <ul class="course-list">
+                    <li>Interactive trainer SQL by DVFU University(48 hours)</li>
+                    <li>Java - take black belt by Zaur Tregulov(121 hours)</li>
+                    <li>Spring for beginners by Zaur Tregulov(20 hours)</li>
+                    <li>Git for beginners by Bogdan Staschuk(5 hours)</li>
+                    <li>HTML, CSS for beginners by Vladilen Minin(10 hours)</li>
+                </ul>
+        </div>
+        <div class="card bg-yellowgreen">
+        <h4>How to connect?</h4>
+            <form>
+                <div class="forms">
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" placeholder="Write your name...">
+                </div>
+                <div class="forms">
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" placeholder="Write your email...">
+                </div>
+                <div class="forms">
+                    <label for="text">Your message:</label>
+                    <input type="textarea" id="text" placeholder="Write your message...">
+                </div>
+                <input type="submit" class="button" value="Contact!">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
